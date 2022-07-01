@@ -1,0 +1,455 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(#2874f0, aqua);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+    margin: 70px;
+}
+
+nav ul li:hover {
+    transform: scale(1.3);
+}
+
+ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: blue;
+}
+
+.intro {
+    display: flex;
+}
+
+.left {
+    width: 65vw;
+    background-image: url('bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.right img {
+    height: 50vh;
+    width: 35vw;
+}
+
+.left a {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(236, 215, 215);
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.left a:hover {
+    color: red;
+    padding: 5px;
+}
+
+.left h1 {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+.left h2 {
+    font-family: 'Lobster', cursive;
+    color: rgb(249, 108, 7);
+    font-size: 3rem;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: center;
+}
+
+.bsb {
+    background-image: linear-gradient(yellow, red);
+}
+
+#bsb h1 {
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    font-style: italic;
+}
+
+#bsb p {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.card h2 {
+    text-align: center;
+    color: aqua;
+}
+
+.card h3 {
+    text-align: center;
+    color: rgb(29, 226, 29);
+    color: white;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card button {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 0 10px 10px;
+    font-size: 20px;
+}
+
+.card button:after {
+    content: "Added";
+    color: green;
+    visibility: hidden;
+}
+
+.card button:focus {
+    visibility: hidden;
+}
+
+.card button:focus::after {
+    visibility: visible;
+}
+
+.recommendations {
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recommendations h1 {
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+.recommendations p {
+    text-align: center;
+    font-size: 30px;
+    color: firebrick;
+    font-weight: bold;
+}
+
+.search input {
+    transform: scale(1.3);
+    border-radius: 5px;
+}
+
+.search:hover {
+    transform: scale(1.3);
+}
+
+.flex3 {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews {
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reviews h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    margin: 1vh 27vw;
+    text-align: center;
+    opacity: 0.7;
+}
+
+textarea {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.response button {
+    transform: scaleY(1.5);
+}
+
+.response button:hover {
+    background-color: green;
+    color: blue;
+}
+
+.response {
+    background-image: url("review.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.response h1 {
+    font-style: oblique;
+    color: greenyellow;
+}
+
+.reviews input {
+    transform: scaleY(1.3);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.fa {
+    padding: 5px 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialmedia {
+    display: flex;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright a {
+    text-decoration: none;
+    margin-right: 10vw;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.copyright a:hover {
+    transform: scaleY(1.3);
+    color: blue;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1350px) {
+    nav ul li a {
+        font-size: 2vw;
+    }
+
+    nav ul li {
+        margin: 30px;
+    }
+
+}
+
+@media screen and (max-width:1180px) {
+    nav {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        font-size: smaller;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .footer1 {
+        flex-direction: column;
+    }
+
+    .socialmedia {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .search input {
+        transform: scaleX(0.5);
+    }
+
+    .search:hover {
+        transform: scaleX(1.5);
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .flex1 {
+        flex-direction: column;
+    }
+
+    .flex2 {
+        flex-direction: column;
+    }
+
+    .flex3 {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 20px 0;
+    }
+
+    .card img {
+        margin: 0 100px 0 100px;
+    }
+
+    .search:hover {
+        transform: scaleX(1);
+    }
+
+}
+
+
+@media screen and (max-width:410px) {
+    .socialmedia {
+        flex-direction: column;
+    }
+}
+
+.card a {
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+#modal .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: white;
+    height: 50vh;
+    font-size: 1.5vh;
+}
+
+.modal a {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#modal:target {
+    display: block;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.modal button{
+    padding: 0 20px;
+    background-color: red;
+    font-size: 40px;
+}
+.modal button:hover{
+    transform: scale(1.1);
+    background-color: green;
+}
